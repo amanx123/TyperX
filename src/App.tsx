@@ -145,8 +145,8 @@ function App() {
       {timer == 0 ? <Modal correct={correctCount} incorrect={incorrectCount} name={name} onClose={() => window.location.reload()} />
         :
         <main className="items-center flex flex-col gap-20 justify-center mt-16">
-          <div className={` h-[16vh] w-[70vw] rounded-xl  ${darkMode ? 'bg-neutral-800' : 'bg-slate-300'} overflow-hidden drop-shadow-md`} >
-            <div className="flex py-12 px-10">
+          <div className={`h-[125px] w-[70vw] rounded-xl  ${darkMode ? 'bg-neutral-800' : 'bg-slate-300'} overflow-hidden drop-shadow-md`} >
+            <div className="flex pl-10 my-auto py-8 ">
               <span className={`${color ? 'text-green-500' : 'text-red-500'} mr-4 text-6xl font-extralight`}>{words[currentWordIndex]}</span>
               {words.slice(currentWordIndex + 1).map((word, index) => (
                 <p key={index} className={`mr-4 text-6xl font-extralight ${darkMode ? 'text-neutral-300' : ''}`}>
